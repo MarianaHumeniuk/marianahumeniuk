@@ -3,7 +3,6 @@
 # The directives (lines) between `BEGIN ` and `END ` are
 # dynamically generated, and should only be modified via WordPress filters.
 # Any changes to the directives between these markers will be overwritten.
-
 # BEGIN WordPress
 # The directives (lines) between `BEGIN WordPress` and `END WordPress` are
 # dynamically generated, and should only be modified via WordPress filters.
@@ -17,7 +16,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /marianahumeniuk/index.php [L]
 </IfModule>
 # END WordPress
-
 # Wordfence WAF
 <IfModule mod_php5.c>
 	php_value auto_prepend_file 'C:\xampp\htdocs\marianahumeniuk/wordfence-waf.php'
@@ -34,11 +32,8 @@ RewriteRule . /marianahumeniuk/index.php [L]
 	Deny from all
 </IfModule>
 </Files>
-
 # END Wordfence WAF
-
 # END 
-
 # Wordfence WAF
 <IfModule mod_php5.c>
 	php_value auto_prepend_file 'C:\xampp\htdocs\marianahumeniuk/wordfence-waf.php'
@@ -55,5 +50,4 @@ RewriteRule . /marianahumeniuk/index.php [L]
 	Deny from all
 </IfModule>
 </Files>
-
 # END Wordfence WAF
